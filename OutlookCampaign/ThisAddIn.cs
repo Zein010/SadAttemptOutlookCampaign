@@ -5,6 +5,7 @@ using System.Text;
 using System.Xml.Linq;
 using Outlook = Microsoft.Office.Interop.Outlook;
 using Office = Microsoft.Office.Core;
+using System.Windows.Forms;
 
 namespace OutlookCampaign
 {
@@ -12,6 +13,7 @@ namespace OutlookCampaign
     {
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
+            MessageBox.Show("Hello, I have been loaded");
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
@@ -31,7 +33,13 @@ namespace OutlookCampaign
             this.Startup += new System.EventHandler(ThisAddIn_Startup);
             this.Shutdown += new System.EventHandler(ThisAddIn_Shutdown);
         }
-        
+
         #endregion
+
+
+        protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()
+        {
+            return new MainRibbon();
+        }
     }
 }

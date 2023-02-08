@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabAddIns">
+        <group id="MyGroup"
+               label="Add-in Configuration">
+          <button label="Settings" id="settingsButton"/>
+          <button label="Advanced Settings" id="advancedSettingsButton"/>
+          <toggleButton label="Details Before Send" id="showDetailsBeforeSendButton"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
