@@ -194,6 +194,19 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="Campaign.cs" />
+    <Compile Include="CampaignSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CampaignSettingsForm.Designer.cs">
+      <DependentUpon>CampaignSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainRibbonVD.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -209,6 +222,12 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="CampaignSettingsForm.resx">
+      <DependentUpon>CampaignSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainRibbonVD.resx">
       <DependentUpon>MainRibbonVD.cs</DependentUpon>
     </EmbeddedResource>
